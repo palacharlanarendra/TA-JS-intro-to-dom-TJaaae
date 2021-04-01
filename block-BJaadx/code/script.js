@@ -71,3 +71,7 @@ let fieldsetElm = document.querySelector("fieldset");
 // 27. Select the parent element of the element stored in `fieldsetElm` variable (#5) and log the `typeof` the element.
 let parentKind=fieldsetElm.parentElement;
 console.log(typeof parentKind);
+
+
+let anchortags = document.querySelectorAll("a");
+console.log(anchortags.length);
