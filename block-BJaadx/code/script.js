@@ -23,9 +23,9 @@ let label = document.querySelector("label");
 // 7. Select the input of type `checkbox` with the `id` selector and store in `inputCheckbox`
 let inputCheckbox = document.getElementById("remember")
 // 8. Select the input of type password using Attribute selectors. (eg: input[type="text"]) and store in `password`
-
+let password = document.querySelector('input[type="password"]');
 // 9. Select the input using the placeholder attribute selector with value `password` and store in `attrPassword`
-
+let attrPassword = document.querySelector('input[placeholder="password"]');
 // 10. Select all the `li` element and store in `allTopics`
 let allTopics = document.querySelectorAll("li");
 // 11. Select all the input element of any type and store in `allInput`
@@ -35,7 +35,7 @@ allTopics.forEach((elem)=>console.log(elem.innerText))
 // 13. Select all the elements with class `list` and store in variable `listOfSelectedTopics`
 let listOfSelectedTopics = document.querySelector(".list");
 // 14. Select the first li element inside the `ul` element using `>` (direct child) and store in `firstLi`
-let firstLi = document.querySelector("ul")>li;
+let firstLi = document.querySelector("ul>li");
 // 15. Select all the img element and log the number of element saying `The total number of img element is ---`
 let allImg = document.querySelector("img");
 console.log(`The total number of img element is ${allImg}`)
@@ -67,5 +67,7 @@ console.log(logElement4);//body
 let logElement5=topics.lastElementChild;
 console.log(typeof logElement5);//body
 // 26. Select the element with type `fieldset` and store in a variable named `fieldsetElm`.
-
+let fieldsetElm = document.querySelector("fieldset");
 // 27. Select the parent element of the element stored in `fieldsetElm` variable (#5) and log the `typeof` the element.
+let parentKind=fieldsetElm.parentElement;
+console.log(typeof parentKind);
